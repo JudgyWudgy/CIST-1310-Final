@@ -1,0 +1,67 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}{% endblock %}
+
+{% block styles%}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+{% endblock %}
+
+{% block scripts%}
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+{% endblock %}
+
+
+{% block navbar %}
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand" href="/index">Welcome to ScoutCon</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/list">Booths</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/newbooth">Enter New Booth</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/showpng">View Building</a>
+            </li>     
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Username" aria-label="Login">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+        </form>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<p>This convention is made for scouts by scouts. 
+You may be asking what is a scout? Well it's a character from a game called team fortress 2. 
+This game is old at this point, dating back to October 10th, 2007.</p>
+<p></p>
+
+<p>Born and raised in Boston, Massachusetts, USA, the Scout is a fast-running scrapper with a baseball bat and a snarky "in-your-face" attitude. 
+He is the fastest and most mobile mercenary on the battlefield unassisted. 
+His Double Jump leaves slower opponents such as the Heavy struggling to keep up and helps him navigate the terrain while dodging oncoming bullets and projectiles. 
+Carrying a Scattergun, a Pistol, and a Bat, the Scout is an ideal class for aggressive fighting and flanking. 
+The Scout is a great class for quick "hit-and-run" tactics that can either sap away enemies' health or kill them outright due to his ability to get in, do damage, and dash away before even being noticed. 
+However, the Scout is tied with the Engineer, Sniper, and Spy for having the lowest health of any class, leaving him vulnerable when he is on the front line; a fair trade-off for his ability to run in and out of a contested hot-spot very quickly, letting him lead the team to victory without the other team even noticing in time.</p>
+
+<p></p>
+
+<p>The Scout is an excellent choice for completing objectives quickly. 
+He can capture control points and push carts at twice the rate of any other class. 
+Only the Scout has this ability naturally; the Demoman and Soldier only have the same ability if they have the Pain Train equipped. 
+His speed also makes him perfect for capturing intelligence briefcases.</p>
+
+<p></p>
+
+<p>The Scout is voiced by Nathan Vetterl</p>
+{% endblock %}

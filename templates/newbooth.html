@@ -1,0 +1,63 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Add the New Booth {% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+{% endblock %}
+
+{% block scripts %} 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand" href="/index">Welcome to ScoutCon</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/list">Booths</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/newbooth">Enter New Booth</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/showpng">View Building</a>
+            </li>     
+        </ul>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="container justify-content-center">
+    <form action ="{{ url_for('addrec')}}" method = "POST">
+        <h3>Booth information</h3>
+        <div class= "col-sm">
+            Booth<br>
+            <input type="text" name="nm"/><br>
+        </div>
+
+        <div class= "col-sm">
+            Merchandice<br>
+            <input type="text" name="merch"/><br>
+        </div>
+
+        <div class= "col-sm">
+            Days<br>
+            <input type="text" name="days"/><br>
+        </div>
+
+        <br>
+        <div class = "col-sm">
+        <input class= "btn btn-success" type="submit" value="Submit"/>
+        </div>
+    </div>
+    </form>
+    {% endblock %}
