@@ -1,1 +1,3 @@
-This is a test
+This project is about a fake convention system that aims to solve the issue of buying tickets/badges for any type of convention. 
+How it would be solved using this system is sorting the different type of users into catagories and giving each one their limited options. Attendee's only being able to buy tickets and see the booths without logging in. Exhibitors log in(this is not implimented) and add their booth to the list. Admins logging in and adding booths if needed, with the future implimentation of editing or deleting entries.
+It can be scaled for any size of convention, adding different type of badges and the payment for how many days plus what type of badge.
